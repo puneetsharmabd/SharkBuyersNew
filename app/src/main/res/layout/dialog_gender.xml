@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selection_bg">
+        <LinearLayout
+            android:id="@+id/layout_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_25sdp">
+            <TextView
+                android:id="@+id/tv_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/_10sdp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_male"
+                android:layout_height="1dp"
+                android:background="#F5F3F3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_45sdp"/>
+            <TextView
+                android:id="@+id/tv_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_cam"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/layout_liner"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_cam"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Cancel"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

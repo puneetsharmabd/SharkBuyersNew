@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SharkBuyers</string>
+
+    <string name="gps_disable">GPS is disabled in your device. Please turn on location of your device</string>
+    <string name="turn_on">Turn on</string>
+    <string name="permission">Please first turn on permission</string>
+
+    <string name="wifi_connected">wifi connected</string>
+    <string name="lost_connection">lost connection</string>
+    <string name="connected_with_wifi">Connected with wifi</string>
+    <string name="connected_with_mobile">Connected with mobile network</string>
+    <string name="you_are_offline">Yout are offline.Please check your internet connection.</string>
+    <string name="title_activity_home">Map</string>
+
+    <string name="string_first_name">Please enter your first name</string>
+    <string name="string_last_name">Please enter your last name</string>
+    <string name="string_email">Please enter your email</string>
+    <string name="string_phone_number">Please enter your phone number</string>
+    <string name="string_dateofbirth">Please select your date of birth</string>
+    <string name="string_gender">Please select your gender</string>
+    <string name="string_address">Please enter your address</string>
+    <string name="string_country">Please enter your country</string>
+    <string name="string_city">Please enter your city</string>
+    <string name="string_brand_image">Please upload brand image</string>
+    <string name="string_resume">Please write or paste  your resume</string>
+    <string name="string_resume1">Please upload  your resume</string>
+    <string name="string_occupations">Please enter your occupations</string>
+    <string name="string_validemail">Please enter valid email</string>
+    <string name="enter_otp">Please enter otp first</string>
+
+    <string name="r_password_enter">Please enter password</string>
+    <string name="old_password_enter">Please enter old password</string>
+    <string name="new_password_enter">Please enter new password</string>
+    <string name="confirm_password_enter">Confirm new password</string>
+    <string name="not_matchh">Please enter new password</string>
+    <string name="password_pattern_hint">Password should contain 1 numeric or 1 character or 1 special character</string>
+    <string name="r_confirm_password">Please enter confirm password</string>
+    <string name="r_password_not_match">Password does not match</string>
+    <string name="password_length">Password between 6 and 16 alphanumeric characters</string>
+    <string name="username_length">first name should be between 3 to 15 characters</string>
+    <string name="lastname_length">last name should be between 3 to 15 characters</string>
+    <string name="email_password_required">Email and Password fields are required</string>
+    <string name="enter_valid_phone_number">Please enter valid phone number</string>
+    <string name="api_key">AIzaSyBv3FYZuLZJR8mOlONc6hMGqh-Taeo7-7g</string>
+
+
+</resources>

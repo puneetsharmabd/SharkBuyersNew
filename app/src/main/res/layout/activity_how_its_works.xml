@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.howitworks.HowItsWorksActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="How it's works"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBuyerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_sharks" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imgBuyerImage"
+                    android:layout_margin="@dimen/_16sdp">
+
+                    <TextView
+                        android:id="@+id/tvHowItsWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How Its Works?"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <TextView
+                        android:id="@+id/tvUnderstanding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvHowItsWork"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Understanding shark buyers with \nthese 4 steps"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutQ1"
+                        android:layout_below="@+id/tvUnderstanding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp">
+                        <TextView
+                            android:id="@+id/tvNo1"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="1"
+                            android:gravity="center"
+                            android:background="@drawable/round_blue_bg"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12ssp" />
+                        <TextView
+                            android:id="@+id/tvQ1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tvNo1"
+                            android:layout_toRightOf="@+id/tvNo1"
+                            android:text="Loream ipsum dummy text."
+                            android:textColor="@color/colorBlue"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_18sdp"/>
+                        <TextView
+                            android:id="@+id/tvA1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvNo1"
+                            android:layout_alignLeft="@+id/tvQ1"
+                            android:layout_below="@+id/tvQ1"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            android:textColor="@color/colorHintText"
+                            android:textSize="@dimen/_10ssp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutQ2"
+                        android:layout_below="@+id/layoutQ1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/tvNo2"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="2"
+                            android:gravity="center"
+                            android:background="@drawable/round_blue_bg"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12ssp" />
+                        <TextView
+                            android:id="@+id/tvQ2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tvNo2"
+                            android:layout_toRightOf="@+id/tvNo2"
+                            android:text="Loream ipsum dummy text."
+                            android:textColor="@color/colorBlue"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_18sdp"/>
+                        <TextView
+                            android:id="@+id/tvA2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvNo2"
+                            android:layout_alignLeft="@+id/tvQ2"
+                            android:layout_below="@+id/tvQ2"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            android:textColor="@color/colorHintText"
+                            android:textSize="@dimen/_10ssp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutQ3"
+                        android:layout_below="@+id/layoutQ2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/tvNo3"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="3"
+                            android:gravity="center"
+                            android:background="@drawable/round_blue_bg"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12ssp" />
+                        <TextView
+                            android:id="@+id/tvQ3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tvNo3"
+                            android:layout_toRightOf="@+id/tvNo3"
+                            android:text="Loream ipsum dummy text."
+                            android:textColor="@color/colorBlue"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_18sdp"/>
+                        <TextView
+                            android:id="@+id/tvA3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvQ3"
+                            android:layout_alignLeft="@+id/tvQ3"
+                            android:layout_below="@+id/tvQ3"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            android:textColor="@color/colorHintText"
+                            android:textSize="@dimen/_10ssp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutQ4"
+                        android:layout_below="@+id/layoutQ3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/tvNo4"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="4"
+                            android:gravity="center"
+                            android:background="@drawable/round_blue_bg"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12ssp" />
+                        <TextView
+                            android:id="@+id/tvQ4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tvNo4"
+                            android:layout_toRightOf="@+id/tvNo4"
+                            android:text="Loream ipsum dummy text."
+                            android:textColor="@color/colorBlue"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginLeft="@dimen/_18sdp"/>
+                        <TextView
+                            android:id="@+id/tvA4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvQ4"
+                            android:layout_alignLeft="@+id/tvQ4"
+                            android:layout_below="@+id/tvQ4"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            android:textColor="@color/colorHintText"
+                            android:textSize="@dimen/_10ssp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/videoView">
+    </VideoView>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.resume.ResumeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/imgEditResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Resume"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+    </RelativeLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/webView"
+        android:layout_below="@+id/layoutActionbar"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <ScrollView
+        android:layout_above="@+id/tvUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/layoutActionbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editResume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_18sdp"
+                android:gravity="top"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="2px"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:text="Update"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@color/colorBlue"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14ssp" />
+</RelativeLayout>

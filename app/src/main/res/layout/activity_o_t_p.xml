@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.otpActivity.OTPActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/logo" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_75sdp">
+
+
+                <TextView
+                    android:id="@+id/tvCodeSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvForgotPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="A Code has been sent to your email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/otpView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCodeSend"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:inputType="number"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    app:cursorColor="@color/colorBlack"
+                    app:cursorWidth="2dp"
+                    app:hideLineWhenFilled="false"
+                    app:itemCount="6"
+                    app:itemSpacing="5dp"
+                    app:viewType="line">
+
+                </com.chaos.view.PinView>
+
+                <TextView
+                    android:id="@+id/tvDontHave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/otpView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12ssp"
+                    android:text="If you don't receive an OTP?"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvResedCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDontHave"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Resend code"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvVerifiy"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_below="@+id/tvResedCode"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:text="Verifiy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

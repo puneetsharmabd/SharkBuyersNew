@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutActionbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_12sdp">
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_below="@+id/tvAccount"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <TextView
+                        android:id="@+id/tvChnagePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:drawableLeft="@drawable/ic_b_lock"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_17sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Change Password"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyPofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_below="@+id/cardCPassword"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/tvProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:drawableLeft="@drawable/ic_e_profile"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_17sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="My Profile"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardResume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardMyPofile"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/tvResume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:drawableLeft="@drawable/ic_resume"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_17sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="View Resume"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardResume"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Others"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOthers"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/tvAboutus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:drawableLeft="@drawable/ic_about"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_17sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="About us"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHelpSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardAboutus"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/tvHelpSupport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:drawableLeft="@drawable/ic_headphone"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_13sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Help &amp; Support"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTermsCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardHelpSupport"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/tvTermsCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:drawableLeft="@drawable/ic_review"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:drawablePadding="@dimen/_17sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Terms &amp; Condition"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/cardTermsCondition"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="@drawable/ic_signout"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

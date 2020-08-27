@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "868089735945",
+    "firebase_url": "https://sharkbuyers-79eb4.firebaseio.com",
+    "project_id": "sharkbuyers-79eb4",
+    "storage_bucket": "sharkbuyers-79eb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868089735945:android:6feec7a2d1956e06d0c1d8",
+        "android_client_info": {
+          "package_name": "com.sharkbuyers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868089735945-f32gj96cdl98q6komb6fdanil9kbjgh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTHlgVSwM9N70ay85gKCG7YdR2IF4KRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868089735945-f32gj96cdl98q6komb6fdanil9kbjgh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
